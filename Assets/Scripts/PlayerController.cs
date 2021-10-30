@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float _rotationSpeed;
-    [SerializeField]private float maxSpeed = 200f;
+    public float maxSpeed;
 
     private Vector3 _rotation;
     private Rigidbody2D _rb;
