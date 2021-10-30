@@ -20,7 +20,6 @@ public class OnColliPlatform : MonoBehaviour
             _plContr._anim.SetTrigger("Bounce");
             _rb.AddForce(new Vector2(_tr.position.x - transform.position.x, _tr.position.y - transform.position.y) * _forceUP, ForceMode2D.Impulse);
             //_rb.velocity = new Vector2(_tr.position.x - transform.position.x, _tr.position.x - transform.position.y) * _forceUP;
-            //_plContr._anim.SetTrigger("NotBounce");
         }
     }
     
