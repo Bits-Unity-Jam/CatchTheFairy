@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 2.unity
     guid: 5f1ef8771dd46d849849c2998eedb326
+  - enabled: 1
+    path: Assets/Scenes/Scene_Fedja.unity
+    guid: 8e4dc37f1f4e8c140a6f11c839b760df
   m_configObjects: {}
