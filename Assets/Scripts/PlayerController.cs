@@ -5,9 +5,11 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float _rotationSpeed;
+    [SerializeField]private float maxSpeed = 200f;
+
     private Vector3 _rotation;
     private Rigidbody2D _rb;
-    [SerializeField] private float _forceUP;
+    
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -16,24 +18,17 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         _rotation = new Vector3(0, 0, Input.GetAxis("Horizontal") * -_rotationSpeed);
+        transform.Rotate(_rotation);
     }
     private void FixedUpdate()
     {
-        if (_rotation.z == 0)
+        _rb.angularVelocity = 0f;
+        if (_rb.velocity.magnitude > maxSpeed)
         {
-            _rb.angularVelocity = 0f;
+            _rb.velocity = _rb.velocity.normalized * maxSpeed;
         }
 
-        transform.Rotate(_rotation);
-
     }
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Platform")
-        {
-            _rb.AddForce(Vector2.up * _forceUP,ForceMode2D.Impulse);
-        }
-    }
-
+    
 }
 
