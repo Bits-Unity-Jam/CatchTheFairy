@@ -9,14 +9,17 @@ public class PlayerController : MonoBehaviour
 
     private Vector3 _rotation;
     private Rigidbody2D _rb;
+    [HideInInspector]public Animator _anim;
     
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
+        _anim = GetComponentInChildren<Animator>();
     }
 
     void Update()
     {
+       
         _rotation = new Vector3(0, 0, Input.GetAxis("Horizontal") * -_rotationSpeed);
         transform.Rotate(_rotation);
     }
