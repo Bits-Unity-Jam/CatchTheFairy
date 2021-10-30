@@ -10,11 +10,13 @@ public class Patrol : MonoBehaviour
     public float startWaitTime;
     public Transform[] moveSpots;
     private int randomSpot;
+    private Animator _anim;
 
     void Start()
     {
         waitTime = startWaitTime;
         randomSpot = Random.Range(0, moveSpots.Length);
+        _anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -35,5 +37,18 @@ public class Patrol : MonoBehaviour
             }
 
         }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("Catch");
+            _anim.SetTrigger("Catch");
+            Invoke("Died",1f);
+        }
+    }
+    void Died()
+    {
+        Destroy(gameObject);
     }
 }

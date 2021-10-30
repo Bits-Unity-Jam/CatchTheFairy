@@ -22818,7 +22818,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 535035150}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.3069324, y: 0.07332468, z: 99.001114}
+  m_LocalPosition: {x: -7.44, y: -4.15, z: 99.001114}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1634160776}
@@ -27882,7 +27882,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618503861}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5669327, y: 9.533324, z: 99.001114}
+  m_LocalPosition: {x: -7.93, y: -4.63, z: 99.001114}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1634160776}
@@ -41397,7 +41397,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 959347502}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.81306744, y: -0.0066752434, z: 99.001114}
+  m_LocalPosition: {x: -6.72, y: -4.43, z: 99.001114}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1634160776}
@@ -58263,6 +58263,7 @@ GameObject:
   - component: {fileID: 1286502526}
   - component: {fileID: 1286502525}
   - component: {fileID: 1286502528}
+  - component: {fileID: 1286502529}
   m_Layer: 0
   m_Name: Fairy
   m_TagString: Untagged
@@ -58328,7 +58329,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 46
   m_Sprite: {fileID: 5994015377306562523, guid: d41a99c5c3928fb4690c350e9748c277, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -58374,6 +58375,32 @@ MonoBehaviour:
   - {fileID: 618503862}
   - {fileID: 1820381098}
   - {fileID: 535035151}
+--- !u!61 &1286502529
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286502524}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.019832639, y: 0.127495}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.37, y: 0.58}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.16034158, y: 0.32501003}
+  m_EdgeRadius: 0
 --- !u!1 &1287322526
 GameObject:
   m_ObjectHideFlags: 0
@@ -74874,6 +74901,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1885419091174736094, guid: 6d83b88d805c7254281686e251b02cd6, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 1885419092231302656, guid: 6d83b88d805c7254281686e251b02cd6, type: 3}
       propertyPath: maxSpeed
       value: 10
@@ -74934,9 +74965,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sachok main
       objectReference: {fileID: 0}
+    - target: {fileID: 1885419092231302663, guid: 6d83b88d805c7254281686e251b02cd6, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1885419092789598363, guid: 6d83b88d805c7254281686e251b02cd6, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 1885419092847708620, guid: 6d83b88d805c7254281686e251b02cd6, type: 3}
       propertyPath: m_SortingOrder
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1885419092847708627, guid: 6d83b88d805c7254281686e251b02cd6, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d83b88d805c7254281686e251b02cd6, type: 3}
@@ -76615,6 +76658,7 @@ GameObject:
   - component: {fileID: 1694201476}
   - component: {fileID: 1694201475}
   - component: {fileID: 1694201474}
+  - component: {fileID: 1694201478}
   m_Layer: 0
   m_Name: Fairy (1)
   m_TagString: Untagged
@@ -76725,6 +76769,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1694201478
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694201473}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.37, y: 0.58}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.37, y: 0.58}
+  m_EdgeRadius: 0
 --- !u!1 &1695211649
 GameObject:
   m_ObjectHideFlags: 0
@@ -85062,7 +85132,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1820381097}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.656933, y: 4.8033247, z: 99.001114}
+  m_LocalPosition: {x: -9.19, y: -4.48, z: 99.001114}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1634160776}
@@ -91253,7 +91323,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938012391}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.3030672, y: 4.7833242, z: 99.001114}
+  m_LocalPosition: {x: -5.3, y: -4.17, z: 99.001114}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1634160776}
