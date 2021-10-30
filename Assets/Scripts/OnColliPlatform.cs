@@ -8,8 +8,10 @@ public class OnColliPlatform : MonoBehaviour
     [SerializeField] private float _forceUP;
     [SerializeField] private Transform _tr;
     private PlayerController _plContr;
+    private AudioSource _aud;
     private void Start()
     {
+        _aud = GetComponentInParent<AudioSource>();
         _plContr = GetComponentInParent<PlayerController>();
     }
 
@@ -17,6 +19,7 @@ public class OnColliPlatform : MonoBehaviour
     {
         if (collision.gameObject.tag == "Platform")
         {
+            _aud.Play();
             _plContr._anim.SetTrigger("Bounce");
             _rb.AddForce(new Vector2(_tr.position.x - transform.position.x, _tr.position.y - transform.position.y) * _forceUP, ForceMode2D.Impulse);
             //_rb.velocity = new Vector2(_tr.position.x - transform.position.x, _tr.position.x - transform.position.y) * _forceUP;
