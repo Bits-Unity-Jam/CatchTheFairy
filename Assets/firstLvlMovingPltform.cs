@@ -12,11 +12,11 @@ public class firstLvlMovingPltform : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.y >= 6.28)
+        if (transform.position.y >= 5.33)
         {
             moveUp = false;
         }
-        else if (transform.position.y <= 4.94)
+        else if (transform.position.y <= 3.49)
         {
             moveUp = true;
         }
