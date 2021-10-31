@@ -9,7 +9,7 @@ public class restartLvl3 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene(4);
         }
 
     }

@@ -14,6 +14,6 @@ public class toThirdLvl : MonoBehaviour
     }
     public void NextLevel()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
 }
