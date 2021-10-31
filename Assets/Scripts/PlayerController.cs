@@ -10,9 +10,11 @@ public class PlayerController : MonoBehaviour
     private Vector3 _rotation;
     private Rigidbody2D _rb;
     [HideInInspector]public Animator _anim;
+    public ParticleSystem _energyPartical;
     
     void Start()
     {
+        _energyPartical = GameObject.FindGameObjectWithTag("Partical").GetComponent<ParticleSystem>();
         _rb = GetComponent<Rigidbody2D>();
         _anim = GetComponentInChildren<Animator>();
     }

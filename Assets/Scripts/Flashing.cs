@@ -6,6 +6,9 @@ public class Flashing : MonoBehaviour
 {
     private ParticleSystem _partical;
     private AudioSource _aud;
+    private ParticleSystem _energyPartical;
+    private PlayerController _player;
+    [SerializeField] private float _timeUnBoost; 
     private void Start()
     {
         _aud = GetComponent<AudioSource>();
@@ -15,14 +18,30 @@ public class Flashing : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            _player = collision.gameObject.GetComponent<PlayerController>();
+            _energyPartical = _player._energyPartical;
+            _energyPartical.Play();
             _aud.Play();
             _partical.Play();
-            collision.gameObject.GetComponent<PlayerController>().maxSpeed = 15;
+            _player.maxSpeed = 15;
             Invoke("Dead", 0.5f);
+            Invoke("Timer", _timeUnBoost);
         }
+    }
+    private void Timer()
+    {
+        Debug.Log("Unboost");
+         UnBoost();
+         Destroy(gameObject);
     }
     void Dead()
     {
-        Destroy(gameObject);
+        Debug.Log("UnActive");
+        gameObject.SetActive(false);
+    }
+    public void UnBoost()
+    {
+        _player.maxSpeed = 10;
+        _energyPartical.Stop();
     }
 }
