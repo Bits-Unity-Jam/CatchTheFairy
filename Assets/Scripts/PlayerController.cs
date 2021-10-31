@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     
     void Start()
     {
-        _energyPartical = GameObject.FindGameObjectWithTag("Partical").GetComponent<ParticleSystem>();
+        _energyPartical = GameObject.FindGameObjectWithTag("Partical")?.GetComponent<ParticleSystem>();
         _rb = GetComponent<Rigidbody2D>();
         _anim = GetComponentInChildren<Animator>();
     }
