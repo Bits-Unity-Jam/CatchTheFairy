@@ -12,11 +12,9 @@ public class Patrol : MonoBehaviour
     private int randomSpot;
     private Animator _anim;
     private AudioSource _aud;
-    private ParticleSystem _partical;
 
     void Start()
     {
-        _partical = GetComponentInChildren<ParticleSystem>();
         _aud = GetComponent<AudioSource>();
         waitTime = startWaitTime;
         randomSpot = Random.Range(0, moveSpots.Length);
@@ -46,14 +44,14 @@ public class Patrol : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            _partical.Play();
             _aud.Play();
             _anim.SetTrigger("Catch");
-            Invoke("Died",1f);
+            Invoke("Died", 0.23f);
         }
     }
     void Died()
     {
         Destroy(gameObject);
+        FaityCounter.AddOne();
     }
 }
