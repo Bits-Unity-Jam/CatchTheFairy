@@ -48285,6 +48285,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 1750339697867015087, guid: c99a91fd98cae2c4a8f24a06e91ba3a3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 32766
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750339697867015087, guid: c99a91fd98cae2c4a8f24a06e91ba3a3, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1504931343
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c99a91fd98cae2c4a8f24a06e91ba3a3, type: 3}
 --- !u!1 &840098132
@@ -73127,7 +73135,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.03
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
