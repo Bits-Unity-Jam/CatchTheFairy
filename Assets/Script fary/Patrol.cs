@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class Patrol : MonoBehaviour
@@ -12,13 +11,17 @@ public class Patrol : MonoBehaviour
     private int randomSpot;
     private Animator _anim;
     private AudioSource _aud;
+    private ParticleSystem _partSys;
+    //private Collider2D FairyCollider;
 
     void Start()
     {
+        _partSys = GetComponentInChildren<ParticleSystem>();
         _aud = GetComponent<AudioSource>();
         waitTime = startWaitTime;
         randomSpot = Random.Range(0, moveSpots.Length);
         _anim = GetComponent<Animator>();
+        //FairyCollider = GetComponent<Collider2D>();
     }
 
     void Update()
@@ -26,7 +29,7 @@ public class Patrol : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position,
             moveSpots[randomSpot].position,speed*Time.deltaTime);
 
-        if (Vector2.Distance(transform.position, moveSpots[randomSpot].position)< 0.2f)
+        if (Vector2.Distance(transform.position, moveSpots[randomSpot].position) < 0.2f)
         {
             if (waitTime <= 0)
             {
@@ -45,12 +48,14 @@ public class Patrol : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             float newCollisionTime = Time.time;
-            if ((newCollisionTime - FaityCounter.OldCollisionTime()) > 0.29f)
+            if ((newCollisionTime - FaityCounter.OldCollisionTime()) > 0.41f)
             {
+                //FairyCollider.enabled = false;
                 FaityCounter.OldCollisionTime(newCollisionTime);
+                _partSys.Play();
                 _aud.Play();
                 _anim.SetTrigger("Catch");
-                Invoke("Died", 0.23f);
+                Invoke("Died", 0.4f);
             }
         }
     }
