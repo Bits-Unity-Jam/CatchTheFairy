@@ -9,7 +9,7 @@ public class restartLvl3 : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene("Scene_Fedja");
+            SceneManager.LoadScene("Level 3");
         }
 
     }

@@ -8,11 +8,11 @@ public class sceneManager : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            Invoke(nameof(NextLevel), 2.1f);
+            Invoke(nameof(NextLevel), 1.99f);
         }
     }
     public void NextLevel()
     {
-        SceneManager.LoadScene("NEW_LST_SCN_WITH_FARY");
+        SceneManager.LoadScene("Level 1");
     }
 }

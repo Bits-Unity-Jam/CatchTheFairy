@@ -14,6 +14,6 @@ public class toFinish : MonoBehaviour
     }
     public void NextLevel()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene("Final scene");
     }
 }
