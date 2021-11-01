@@ -48183,7 +48183,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1750339697285631337, guid: c99a91fd98cae2c4a8f24a06e91ba3a3, type: 3}
       propertyPath: m_MaxValue
-      value: 9
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1750339697285631338, guid: c99a91fd98cae2c4a8f24a06e91ba3a3, type: 3}
       propertyPath: fillSpeed
