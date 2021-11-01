@@ -14,6 +14,6 @@ public class toThirdLvl : MonoBehaviour
     }
     public void NextLevel()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene("Scene_Fedja");
     }
 }

@@ -10,7 +10,7 @@ public class restartLvl1 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
 
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene("NEW_LST_SCN_WITH_FARY");
         }
 
     }

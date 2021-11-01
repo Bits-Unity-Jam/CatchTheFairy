@@ -13,6 +13,6 @@ public class toSecondLvl : MonoBehaviour
     }
     public void NextLevel()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene("Level 2");
     }
 }

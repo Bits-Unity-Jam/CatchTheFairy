@@ -13,6 +13,6 @@ public class sceneManager : MonoBehaviour
     }
     public void NextLevel()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene("NEW_LST_SCN_WITH_FARY");
     }
 }

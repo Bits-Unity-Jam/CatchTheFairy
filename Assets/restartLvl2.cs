@@ -11,8 +11,7 @@ public class restartLvl2 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
 
-            SceneManager.LoadScene(3);
+            SceneManager.LoadScene("Level 2");
         }
-
     }
 }
