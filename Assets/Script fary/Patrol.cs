@@ -22,6 +22,7 @@ public class Patrol : MonoBehaviour
         randomSpot = Random.Range(0, moveSpots.Length);
         _anim = GetComponent<Animator>();
         //FairyCollider = GetComponent<Collider2D>();
+        FaityCounter.RestartCounter();
     }
 
     void Update()

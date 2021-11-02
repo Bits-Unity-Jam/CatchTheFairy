@@ -4,7 +4,7 @@ using UnityEngine;
 
 public static class FaityCounter
 {
-    public static int counter = 0;
+    public static int counter;
     public static float time = 0;
 
     public static float OldCollisionTime(float newCollisionTime)
@@ -16,6 +16,8 @@ public static class FaityCounter
     {
         return time;
     }
+    public static void RestartCounter() => counter = 0;
+
     public static void AddOne()
     {
         counter++;
