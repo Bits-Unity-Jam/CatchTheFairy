@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 _rotation;
     private Rigidbody2D _rb;
     [HideInInspector]public Animator _anim;
-    public ParticleSystem _energyPartical;
+    [HideInInspector]public ParticleSystem _energyPartical;
     
     void Start()
     {
