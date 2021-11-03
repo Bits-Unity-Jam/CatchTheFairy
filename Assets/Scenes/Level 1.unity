@@ -122610,5 +122610,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sachok main
       objectReference: {fileID: 0}
+    - target: {fileID: 5544080119702331087, guid: 6d83b88d805c7254281686e251b02cd6, type: 3}
+      propertyPath: _forceUP
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d83b88d805c7254281686e251b02cd6, type: 3}
