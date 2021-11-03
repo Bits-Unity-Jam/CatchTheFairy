@@ -12,6 +12,10 @@ public class restartLvl1 : MonoBehaviour
 
             SceneManager.LoadScene("Level 1");
         }
+    }
 
+    public void RestartButton()
+    {
+        SceneManager.LoadScene("Level 1");
     }
 }

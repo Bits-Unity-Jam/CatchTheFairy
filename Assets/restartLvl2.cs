@@ -14,4 +14,8 @@ public class restartLvl2 : MonoBehaviour
             SceneManager.LoadScene("Level 2");
         }
     }
+    public void Restart()
+    {
+        SceneManager.LoadScene("Level 2");
+    }
 }

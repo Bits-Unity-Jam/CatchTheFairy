@@ -14,11 +14,15 @@ public class wizard : MonoBehaviour
     private void Start()
     {
         animator = GetComponent<Animator>();
+
+        isStarted = false;
+        isCutsceneEnded = false;
+        isGameStarted = false;
     }
 
     private void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isStarted != true)
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.anyKey) && isStarted != true)
         {
             animator.SetBool("IsStarted", true);
             isStarted = true;
@@ -29,11 +33,32 @@ public class wizard : MonoBehaviour
 
             camAnim.SetBool("cutscene1", true);
 
+            IsStartedFalse();
         }
 
         //Invoke(nameof(Falsed), 5f);
 
     }
+    public void IsStartedFalse()
+    {
+
+        isStarted = false;
+        isCutsceneEnded = false;
+        isGameStarted = false;
+    }
+
+    public void StartScene()
+    {
+            animator.SetBool("IsStarted", true);
+            isStarted = true;
+
+            Invoke(nameof(Fader1), 2f);
+
+            //Invoke(nameof(Droped), 2.7f);
+
+            camAnim.SetBool("cutscene1", true);
+    }
+
     public void Droped()
     {
         animator.SetBool("IsDroped", true);

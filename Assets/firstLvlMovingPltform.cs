@@ -6,19 +6,27 @@ public class firstLvlMovingPltform : MonoBehaviour
 {
     float dX;
     float speed = 0.3f;
+    [SerializeField] private float moveTime;
 
     bool moveUp = true;
+    float startMoveTime = Time.time;
 
 
     void Update()
     {
-        if (transform.position.y >= 5.33)
+
+        float deltaT = (Time.time - startMoveTime);
+        if (deltaT <= moveTime)
         {
             moveUp = false;
         }
-        else if (transform.position.y <= 3.49)
+        else if (deltaT > moveTime && deltaT <= moveTime * 2)
         {
             moveUp = true;
+        }
+        else
+        {
+            startMoveTime = Time.time;
         }
 
         if (moveUp)
