@@ -13,4 +13,8 @@ public class restartLvl3 : MonoBehaviour
         }
 
     }
+    public void Restart()
+    {
+        SceneManager.LoadScene("Level 3");
+    }
 }
