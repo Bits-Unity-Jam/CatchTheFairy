@@ -23,7 +23,15 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-       
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            OnTurnLeftButtonDown();
+        }
+        else if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            OnTurnRightButtonDown();
+        }
+
         _rotation = new Vector3(0, 0, direction * -_rotationSpeed);
         //_rotation = new Vector3(0, 0, Input.GetAxis("Horizontal") * -_rotationSpeed);
         transform.Rotate(_rotation);

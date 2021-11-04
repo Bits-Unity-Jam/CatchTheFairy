@@ -28560,7 +28560,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 518949339}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -39581,7 +39581,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751310665}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 376.88, y: 308.99, z: -10}
+  m_LocalPosition: {x: 377.09, y: 308.94, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 141575986}
@@ -93457,11 +93457,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5544080119186892888, guid: 6d83b88d805c7254281686e251b02cd6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 376.88
+      value: 377.09
       objectReference: {fileID: 0}
     - target: {fileID: 5544080119186892888, guid: 6d83b88d805c7254281686e251b02cd6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 308.99
+      value: 308.94
       objectReference: {fileID: 0}
     - target: {fileID: 5544080119186892888, guid: 6d83b88d805c7254281686e251b02cd6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -99024,7 +99024,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1779902286}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10cc941877b89d546949bed8bcb6bd7d, type: 3}
+  m_Script: {fileID: 11500000, guid: 9424b72dfb6293743ba17cb0ef6a7aee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1779902291 stripped
@@ -105526,10 +105526,9 @@ GameObject:
   - component: {fileID: 1898148805}
   - component: {fileID: 1898148804}
   - component: {fileID: 1898148802}
-  - component: {fileID: 1898148803}
   m_Layer: 0
   m_Name: SquareTrigger
-  m_TagString: Untagged
+  m_TagString: FinishLevel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105560,18 +105559,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1898148803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898148801}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24acc1421c4ecc04aa2e9a1fd531e141, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &1898148804
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -113465,7 +113452,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1779902288}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: restartLvl2, Assembly-CSharp
           m_MethodName: Restart
           m_Mode: 1
@@ -113555,7 +113542,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 2024684850}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
