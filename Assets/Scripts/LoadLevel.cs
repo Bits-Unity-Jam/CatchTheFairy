@@ -10,13 +10,7 @@ public class LoadLevel : MonoBehaviour
             Invoke(nameof(NextLevel), 0.3f);
         }
     }
-    private void FixedUpdate()
-    {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
-    }
+
     public void NextLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
