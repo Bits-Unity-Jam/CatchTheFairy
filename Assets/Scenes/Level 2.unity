@@ -11323,7 +11323,7 @@ GameObject:
   - component: {fileID: 205472683}
   m_Layer: 0
   m_Name: MovingPlatform
-  m_TagString: Platform
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113452,9 +113452,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1779902288}
-          m_TargetAssemblyTypeName: LoadLevel, Assembly-CSharp
-          m_MethodName: RestartLevel
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: restartLvl2, Assembly-CSharp
+          m_MethodName: Restart
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -115482,7 +115482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1750339697285631337, guid: c99a91fd98cae2c4a8f24a06e91ba3a3, type: 3}
       propertyPath: m_MaxValue
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1750339697285631338, guid: c99a91fd98cae2c4a8f24a06e91ba3a3, type: 3}
       propertyPath: fillSpeed
