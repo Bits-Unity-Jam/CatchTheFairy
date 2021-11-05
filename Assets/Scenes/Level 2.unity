@@ -11323,7 +11323,7 @@ GameObject:
   - component: {fileID: 205472683}
   m_Layer: 0
   m_Name: MovingPlatform
-  m_TagString: Untagged
+  m_TagString: Platform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115482,7 +115482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1750339697285631337, guid: c99a91fd98cae2c4a8f24a06e91ba3a3, type: 3}
       propertyPath: m_MaxValue
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1750339697285631338, guid: c99a91fd98cae2c4a8f24a06e91ba3a3, type: 3}
       propertyPath: fillSpeed
