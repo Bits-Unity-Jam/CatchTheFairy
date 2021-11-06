@@ -70,7 +70,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rotationSpeed: 1.75
-  maxSpeed: 10
+  maxSpeed: 15
   _anim: {fileID: 0}
   _energyPartical: {fileID: 0}
 --- !u!82 &6258558527040836029
