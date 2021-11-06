@@ -4,18 +4,19 @@ using UnityEngine.UI;
 public class ProgressBar : MonoBehaviour
 {
     [SerializeField] private Slider slider;
-    //[SerializeField] private ParticleSystem particleSys;
+    private ParticleSystem particleSys;
     //public float targetProgress = 0;
     public float fillSpeed = 0.67f;
 
     private void Awake()
     {
-        slider = gameObject.GetComponent<Slider>();    
+        slider = gameObject.GetComponent<Slider>();
+        particleSys = GameObject.Find("progresBarParticle").GetComponent<ParticleSystem>();
     }
     // Start is called before the first frame update
     void Start()
     {
-        
+        particleSys.Stop();
     }
 
     // Update is called once per frame
@@ -24,6 +25,14 @@ public class ProgressBar : MonoBehaviour
         if (slider.value < FaityCounter.counter)
         {
             slider.value += fillSpeed * Time.deltaTime;
+            if (!particleSys.isPlaying)
+            {
+                particleSys.Play();
+            }
+        }
+        else
+        {
+            particleSys.Stop();
         }
     }
     //public void IncrementProgres()
