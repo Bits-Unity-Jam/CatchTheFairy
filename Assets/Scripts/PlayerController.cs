@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         _rotation = new Vector3(0, 0, direction * -_rotationSpeed);
-        //_rotation = new Vector3(0, 0, Input.GetAxis("Horizontal") * -_rotationSpeed);
+        _rotation = new Vector3(0, 0, Input.GetAxis("Horizontal") * -_rotationSpeed);
         transform.Rotate(_rotation);
     }
 
@@ -56,8 +56,6 @@ public class PlayerController : MonoBehaviour
         {
             _rb.velocity = _rb.velocity.normalized * maxSpeed;
         }
-
-    }
-    
+    }  
 }
 
