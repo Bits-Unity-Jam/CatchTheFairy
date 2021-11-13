@@ -9,34 +9,29 @@ public abstract class AbstractSphere : MonoBehaviour
     private AudioSource _audSphere;
     private float _particalPlayTime = 0.4f;
     protected ParticleSystem _particSysPlayer;
-    protected OnColliPlatform _onCollisionPlat;
+    protected PhysicsOfJump _onCollisionPlat;
+    [SerializeField] private float _currentSphereActionTime;
 
 
-    public abstract float sphereActionTime { set; get; }
+    private float sphereActionTime;
     protected void Start()
     {
+        sphereActionTime = _currentSphereActionTime;
+
         _audSphere = GetComponent<AudioSource>();
         _particalSphere = GetComponentInChildren<ParticleSystem>();
 
         _particSysPlayer = PlayerController._playerInstance._PlayerConPartical;
-        _onCollisionPlat = OnColliPlatform.instanceOnColl;
+        _onCollisionPlat = PhysicsOfJump.instanceOnColl;
     }
     protected void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            //_player = collision.gameObject.GetComponent<PlayerController>();
-
-            //_energyPartical = _player._energyPartical;
-            //_particSysPlayer?.Play();
-            //_player.maxSpeed = 15;
-
+            _particSysPlayer?.Play();
             _audSphere.Play();
             _particalSphere.Play();
             AffectOnPlayer();
-            EndAffectOnPlayer();
-            //OnColliPlatform.instanceOnColl._forceUP = _boostSpeed;
-
             Invoke("DisappearSpher", _particalPlayTime);
             Invoke("DestroySphere", sphereActionTime);
         }
@@ -50,9 +45,11 @@ public abstract class AbstractSphere : MonoBehaviour
     }
     private void DestroySphere()
     {
-        Destroy(gameObject);
+        _particSysPlayer?.Stop();
         EndAffectOnPlayer();
+        Destroy(gameObject);
     }
+
 
 
 }

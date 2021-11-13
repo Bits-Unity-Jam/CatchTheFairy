@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 _rotation;
     private Rigidbody2D _rb;
     [HideInInspector]public Animator _anim;
-    [HideInInspector]public ParticleSystem _PlayerConPartical;
+    public ParticleSystem _PlayerConPartical;
     private SpriteRenderer _spriteRend;
     public static PlayerController _playerInstance { get; private set; }
     private void Awake()
@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         _spriteRend = GetComponentInChildren<SpriteRenderer>();
-        _PlayerConPartical = GameObject.FindGameObjectWithTag("Partical")?.GetComponent<ParticleSystem>();
+        //_PlayerConPartical = GetComponentInChildren<ParticleSystem>();
         _rb = GetComponent<Rigidbody2D>();
         _anim = GetComponentInChildren<Animator>();
     }
@@ -45,8 +45,7 @@ public class PlayerController : MonoBehaviour
         if (_rb.velocity.magnitude > maxSpeed)
         {
             _rb.velocity = _rb.velocity.normalized * maxSpeed;
-        }
-        
+        } 
     }
     
 }

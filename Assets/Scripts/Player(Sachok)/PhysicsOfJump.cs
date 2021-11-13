@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OnColliPlatform : MonoBehaviour
+public class PhysicsOfJump : MonoBehaviour
 {
     [SerializeField]private Rigidbody2D _rb;
     [HideInInspector] public float _forceUP;
@@ -11,7 +11,7 @@ public class OnColliPlatform : MonoBehaviour
     private PlayerController _plContr;
     private AudioSource _aud;
     private ParticleSystem _partic;
-    public static OnColliPlatform instanceOnColl;
+    public static PhysicsOfJump instanceOnColl;
     private void Awake()
     {
         instanceOnColl = this;
