@@ -7,7 +7,11 @@ public class LookAt : MonoBehaviour
     [SerializeField]private Transform _target;
     [SerializeField] private float smoothSpeed = 0.125f;
     [SerializeField] private Vector3 _offset;
+    private void Start()
+    {
 
+        _target = GameObject.FindGameObjectWithTag("Player").transform;
+    }
     private void LateUpdate()
     {
         Vector3 desirePosition = _target.position + _offset;
