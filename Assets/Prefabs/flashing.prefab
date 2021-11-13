@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 2755953631929848835}
   - component: {fileID: 2755953631929848834}
   - component: {fileID: 2755953631929848833}
-  - component: {fileID: 2755953631929848837}
   - component: {fileID: 2755953632700473233}
+  - component: {fileID: 3429335233580175983}
   m_Layer: 0
   m_Name: flashing
   m_TagString: Untagged
@@ -124,20 +124,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &2755953631929848837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2755953631929848832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15473c87231e04549ab8c227d07ce6dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _boostSpeed: 11
-  _timeUnBoost: 10
 --- !u!82 &2755953632700473233
 AudioSource:
   m_ObjectHideFlags: 0
@@ -234,6 +220,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &3429335233580175983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2755953631929848832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf3da8dda721a1149b5955e0c2898bb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentSphereActionTime: 10
+  _boostJumpForce: 11
 --- !u!1 &2755953633357916339
 GameObject:
   m_ObjectHideFlags: 0
