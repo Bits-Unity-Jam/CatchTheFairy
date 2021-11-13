@@ -24,7 +24,6 @@ public class Flashing : MonoBehaviour
             _energyPartical.Play();
             _aud.Play();
             _partical.Play();
-            _player.maxSpeed = 15;
             PhysicsOfJump.instanceOnColl._forceUP = _boostSpeed;
             Invoke("Dead", 0.5f);
             Invoke("Timer", _timeUnBoost);
@@ -44,7 +43,6 @@ public class Flashing : MonoBehaviour
     public void UnBoost()
     {
         PhysicsOfJump.instanceOnColl._forceUP = 7;
-        _player.maxSpeed = 10;
         _energyPartical.Stop();
     }
 }

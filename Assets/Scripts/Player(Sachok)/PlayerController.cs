@@ -6,9 +6,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float _rotationSpeed;
-    public float maxSpeed;
+    //public float maxSpeed;
     private Vector3 _rotation;
-    private Rigidbody2D _rb;
+    [HideInInspector]public Rigidbody2D _rb;
     [HideInInspector]public Animator _anim;
     public ParticleSystem _PlayerConPartical;
     private SpriteRenderer _spriteRend;
@@ -42,11 +42,11 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        _rb.angularVelocity = 0f;
-        if (_rb.velocity.magnitude > maxSpeed)
-        {
-            _rb.velocity = _rb.velocity.normalized * maxSpeed;
-        } 
+        //_rb.angularVelocity = 0f;
+        //if (_rb.velocity.magnitude > maxSpeed)
+        //{
+        //    _rb.velocity = _rb.velocity.normalized * maxSpeed;
+        //} 
     }
     
 }
