@@ -9822,7 +9822,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &8192258065137842320
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9835,8 +9835,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a8e4f42c312f884e9f0096d5a8adf34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _rotationSpeed: 1.75
-  maxSpeed: 15
+  _rotationSpeed: 5
+  _rb: {fileID: 0}
   _anim: {fileID: 0}
   _PlayerConPartical: {fileID: 7753762471545282085}
 --- !u!82 &7753762471137821047
