@@ -6,6 +6,7 @@ public class OnColliPlatform : MonoBehaviour
 {
     [SerializeField]private Rigidbody2D _rb;
     [HideInInspector] public float _forceUP;
+    public float _defaultForceUP { get; private set; } = 7;
     [SerializeField] private Transform _tr;
     private PlayerController _plContr;
     private AudioSource _aud;
@@ -17,7 +18,7 @@ public class OnColliPlatform : MonoBehaviour
     }
     private void Start()
     {
-        _forceUP = 7;
+        _forceUP = _defaultForceUP;
         _partic = GetComponentInChildren<ParticleSystem>();
         _aud = GetComponentInParent<AudioSource>();
         _plContr = GetComponentInParent<PlayerController>();
@@ -30,7 +31,7 @@ public class OnColliPlatform : MonoBehaviour
             _partic.Play();
             _aud.Play();
             _plContr._anim.SetTrigger("Bounce");
-            _rb.velocity = new Vector2(0, 0);
+            _rb.velocity = new Vector3(0, 0,0);
             _rb.AddForce(new Vector2(_tr.position.x - transform.position.x, _tr.position.y - transform.position.y) * _forceUP, ForceMode2D.Impulse);
             //_rb.velocity = new Vector2(_tr.position.x - transform.position.x, _tr.position.x - transform.position.y) * _forceUP;
         }

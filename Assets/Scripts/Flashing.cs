@@ -20,7 +20,7 @@ public class Flashing : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             _player = collision.gameObject.GetComponent<PlayerController>();
-            _energyPartical = _player._energyPartical;
+            _energyPartical = _player._PlayerConPartical;
             _energyPartical.Play();
             _aud.Play();
             _partical.Play();

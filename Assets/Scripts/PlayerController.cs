@@ -6,18 +6,21 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float _rotationSpeed;
     public float maxSpeed;
-
     private Vector3 _rotation;
     private Rigidbody2D _rb;
     [HideInInspector]public Animator _anim;
-    [HideInInspector]public ParticleSystem _energyPartical;
-    private Vector3 _velocity;
+    [HideInInspector]public ParticleSystem _PlayerConPartical;
     private SpriteRenderer _spriteRend;
-    
+    public static PlayerController _playerInstance { get; private set; }
+    private void Awake()
+    {
+        _playerInstance = this;
+    }
+
     void Start()
     {
         _spriteRend = GetComponentInChildren<SpriteRenderer>();
-        _energyPartical = GameObject.FindGameObjectWithTag("Partical")?.GetComponent<ParticleSystem>();
+        _PlayerConPartical = GameObject.FindGameObjectWithTag("Partical")?.GetComponent<ParticleSystem>();
         _rb = GetComponent<Rigidbody2D>();
         _anim = GetComponentInChildren<Animator>();
     }
@@ -27,14 +30,6 @@ public class PlayerController : MonoBehaviour
        
         _rotation = new Vector3(0, 0, Input.GetAxis("Horizontal") * -_rotationSpeed);
         transform.Rotate(_rotation);
-    }
-    private void FixedUpdate()
-    {
-        _rb.angularVelocity = 0f;
-        if (_rb.velocity.magnitude > maxSpeed)
-        {
-            _rb.velocity = _rb.velocity.normalized * maxSpeed;
-        }
         if (_rb.velocity.x < 0)
         {
             _spriteRend.flipX = true;
@@ -43,6 +38,15 @@ public class PlayerController : MonoBehaviour
         {
             _spriteRend.flipX = false;
         }
+    }
+    private void FixedUpdate()
+    {
+        _rb.angularVelocity = 0f;
+        if (_rb.velocity.magnitude > maxSpeed)
+        {
+            _rb.velocity = _rb.velocity.normalized * maxSpeed;
+        }
+        
     }
     
 }
