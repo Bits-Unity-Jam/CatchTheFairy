@@ -7,7 +7,7 @@ public abstract class AbstractSphere : MonoBehaviour
 {
     private ParticleSystem _particalSphere;
     private AudioSource _audSphere;
-    private float _particalPlayTime = 0.5f;
+    private float _particalPlayTime = 0.4f;
     protected ParticleSystem _particSysPlayer;
     protected OnColliPlatform _onCollisionPlat;
 
