@@ -14,7 +14,7 @@ public class OptionMenu : MonoBehaviour
 
     public void SetHards(int qualityHards)
     {
-
+        //Дописати зміну складності
     }
 
     public void Sound()

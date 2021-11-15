@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -23,6 +24,11 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
+        //if (Input.GetKeyDown(KeyCode.Escape))
+        //{
+        //    SceneManager.LoadScene("New Main menu");
+        //}
+
         _rotation = new Vector3(0, 0, direction * -_rotationSpeed);
         //_rotation = new Vector3(0, 0, Input.GetAxis("Horizontal") * -_rotationSpeed);
         transform.Rotate(_rotation);
