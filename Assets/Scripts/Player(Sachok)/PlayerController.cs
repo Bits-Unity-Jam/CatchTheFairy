@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public ParticleSystem _PlayerConPartical;
     private SpriteRenderer _spriteRend;
     public static PlayerController _playerInstance { get; private set; }
+
     private void Awake()
     {
         _playerInstance = this;
@@ -28,9 +29,6 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-       
-        _rotation = new Vector3(0, 0, Input.GetAxis("Horizontal") * -_rotationSpeed);
-        transform.Rotate(_rotation);
         if (_rb.velocity.x < 0)
         {
             _spriteRend.flipX = true;
@@ -42,11 +40,8 @@ public class PlayerController : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        //_rb.angularVelocity = 0f;
-        //if (_rb.velocity.magnitude > maxSpeed)
-        //{
-        //    _rb.velocity = _rb.velocity.normalized * maxSpeed;
-        //} 
+        _rotation = new Vector3(0, 0, Input.GetAxis("Horizontal") * -_rotationSpeed);
+        transform.Rotate(_rotation);
     }
     
 }
