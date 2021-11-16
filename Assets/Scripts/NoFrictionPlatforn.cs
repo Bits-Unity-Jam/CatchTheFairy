@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class NoFrictionPlatforn : MonoBehaviour
 {
+    private Quaternion  _RotPlayer;
     [SerializeField] private float _speedAcceleration;
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.GetComponent<PlayerController>()!=null)
         {
-            PlayerController._playerInstance._rb.AddForce(transform.position * PlayerController._playerInstance.transform.rotation.z * _speedAcceleration, ForceMode2D.Impulse);
+            _RotPlayer = PlayerController._playerInstance.transform.rotation.normalized;
+            print(_RotPlayer.z);
+            PlayerController._playerInstance._rb.AddForce(transform.right * _RotPlayer.z * _speedAcceleration, ForceMode2D.Impulse);
         }
     }
 }
