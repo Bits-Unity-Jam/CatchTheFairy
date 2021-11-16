@@ -154,6 +154,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.Bits.CatchTheFairy
+    Standalone: com.Bits.CatchTheFairy
   buildNumber:
     Standalone: 0
     iPhone: 0
