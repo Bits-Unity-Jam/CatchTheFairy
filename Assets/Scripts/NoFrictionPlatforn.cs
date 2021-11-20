@@ -11,7 +11,6 @@ public class NoFrictionPlatforn : MonoBehaviour
         if (collision.gameObject.GetComponent<PlayerController>()!=null)
         {
             _RotPlayer = PlayerController._playerInstance.transform.rotation.normalized;
-            print(_RotPlayer.z);
             PlayerController._playerInstance._rb.AddForce(transform.right * _RotPlayer.z * _speedAcceleration, ForceMode2D.Impulse);
         }
     }
