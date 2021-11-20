@@ -8,6 +8,7 @@ TagManager:
   - Platform
   - Partical
   - FinishLevel
+  - WindArea
   layers:
   - Default
   - TransparentFX
