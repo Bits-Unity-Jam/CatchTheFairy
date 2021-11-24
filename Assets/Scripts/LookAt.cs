@@ -9,7 +9,6 @@ public class LookAt : MonoBehaviour
     [SerializeField] private Vector3 _offset;
     private void Start()
     {
-
         _target = GameObject.FindGameObjectWithTag("Player").transform;
     }
     private void LateUpdate()
