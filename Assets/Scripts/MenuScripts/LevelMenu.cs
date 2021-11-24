@@ -44,10 +44,4 @@ public class LevelMenu : MonoBehaviour
         PlayerPrefs.DeleteAll();
     }
 
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

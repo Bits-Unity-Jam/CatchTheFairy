@@ -1,40 +1,37 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class LevelController : MonoBehaviour
 {
     public static LevelController instance = null;
-    int sceneIndex;
+    int currentSceneIndex;
     int levelComplete;
-
-
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         if (instance == null)
         {
             instance = this;
         }
+    }
 
-        sceneIndex = SceneManager.GetActiveScene().buildIndex;
+    void Start()
+    {
+        currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         levelComplete = PlayerPrefs.GetInt("LevelComplete");
 
     }
 
     public void isEndGame()
     {
-        if (sceneIndex == 3)
+        if (currentSceneIndex == 5)//останій рівень 3
         {
             Invoke("LoadMainMenu", 1f);
         }
         else
         {
-            if (levelComplete < sceneIndex)
+            if (levelComplete < currentSceneIndex)
             {
-                PlayerPrefs.SetInt("LevelComplete", sceneIndex);
+                PlayerPrefs.SetInt("LevelComplete", currentSceneIndex);
             }
             Invoke("NextLevel", 1f);
         }
@@ -42,19 +39,11 @@ public class LevelController : MonoBehaviour
 
     void NextLevel()
     {
-        SceneManager.LoadScene(sceneIndex + 1);
+        SceneManager.LoadScene(currentSceneIndex + 1);
     }
 
     void LoadMainMenu()
     {
         SceneManager.LoadScene("New Main menu");
-    }
-
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
