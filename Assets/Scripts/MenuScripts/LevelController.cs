@@ -23,7 +23,7 @@ public class LevelController : MonoBehaviour
 
     public void isEndGame()
     {
-        if (currentSceneIndex == 5)//останій рівень 3
+        if (currentSceneIndex == SceneManager.sceneCountInBuildSettings-1)//кількість сцен
         {
             Invoke("LoadMainMenu", 1f);
         }
