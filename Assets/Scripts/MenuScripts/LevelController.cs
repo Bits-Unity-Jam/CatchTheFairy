@@ -46,4 +46,10 @@ public class LevelController : MonoBehaviour
     {
         SceneManager.LoadScene("New Main menu");
     }
+    
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        print("hi");
+    }
 }

@@ -9777,7 +9777,6 @@ GameObject:
   - component: {fileID: 8192258065137842321}
   - component: {fileID: 8192258065137842320}
   - component: {fileID: 7753762471137821047}
-  - component: {fileID: 4122295931740826626}
   - component: {fileID: 8779022020184986465}
   m_Layer: 0
   m_Name: Sachok main 1 1
@@ -9936,18 +9935,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &4122295931740826626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8192258065137842327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9424b72dfb6293743ba17cb0ef6a7aee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &8779022020184986465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10211,7 +10198,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 19.2, y: 10.8}
+    oldSize: {x: 19.199999, y: 10.799999}
     newSize: {x: 19.2, y: 10.8}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
