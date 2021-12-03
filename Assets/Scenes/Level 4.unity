@@ -53245,7 +53245,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 807863443}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -67495,8 +67495,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019278372}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 56.95772, y: -10.946846, z: 0}
-  m_LocalScale: {x: 0.6991, y: 0.6991, z: 0.6991}
+  m_LocalPosition: {x: 56.95772, y: -10.9697, z: 0}
+  m_LocalScale: {x: 0.6991, y: 0.68120307, z: 0.6991}
   m_Children: []
   m_Father: {fileID: 1483424052}
   m_RootOrder: 1224
@@ -71039,6 +71039,14 @@ PrefabInstance:
     - target: {fileID: 8192258065137842327, guid: 377ac4a41da786942b47ca5f00793682, type: 3}
       propertyPath: m_Name
       value: Sachok main 1 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192258065863303005, guid: 377ac4a41da786942b47ca5f00793682, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8192258065863303005, guid: 377ac4a41da786942b47ca5f00793682, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 377ac4a41da786942b47ca5f00793682, type: 3}
@@ -90290,7 +90298,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1358609525}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 34.597717, y: 10.943153, z: 0}
+  m_LocalPosition: {x: 32.83, y: 4.97, z: 0}
   m_LocalScale: {x: 2.6165447, y: 2.6165447, z: 2.6165447}
   m_Children: []
   m_Father: {fileID: 1483424052}
@@ -99688,7 +99696,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1469813732}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -107747,7 +107755,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1577224680}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -122735,7 +122743,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1773014973}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
