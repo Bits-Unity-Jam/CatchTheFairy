@@ -43,7 +43,7 @@ public class LevelController : MonoBehaviour
     }
 
     void LoadMainMenu()
-    {
+    { 
         SceneManager.LoadScene("New Main menu");
     }
     
