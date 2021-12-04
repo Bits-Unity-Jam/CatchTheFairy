@@ -31,18 +31,21 @@ public class windCollider : MonoBehaviour
     private void OnTriggerStay2D(Collider2D collision)
     {
 
+        if (collision.gameObject.tag == "WindArea")
+        {
 
-        if ((transform.rotation.z > 0.15 && transform.rotation.z < 0.85) || (transform.rotation.z < -0.15 && transform.rotation.z > -0.85))
-        {
-            playerRigitbody.AddForce(Vector2.up * forceSvale);
-            //playerRigitbody.AddForce(transform.up * 1.01f);
-            playerRigitbody.gravityScale = gravityMultiple;
-        }
-        else
-        {
-            playerRigitbody.angularDrag = 0;
-            playerRigitbody.drag = 0.05f;
-            playerRigitbody.gravityScale = 1f;
+            if ((transform.rotation.z > 0.15 && transform.rotation.z < 0.85) || (transform.rotation.z < -0.15 && transform.rotation.z > -0.85))
+            {
+                playerRigitbody.AddForce(Vector2.up * forceSvale);
+                //playerRigitbody.AddForce(transform.up * 1.01f);
+                playerRigitbody.gravityScale = gravityMultiple;
+            }
+            else
+            {
+                playerRigitbody.angularDrag = 0;
+                playerRigitbody.drag = 0.05f;
+                playerRigitbody.gravityScale = 1f;
+            }
         }
 
     }
