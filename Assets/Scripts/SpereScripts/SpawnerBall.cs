@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnerBall : MonoBehaviour
 {
-    [SerializeField] private float _timeToSpawn;
+    public static float _timeToSpawn;
     [SerializeField] private GameObject _energyBall;
     private void Start()
     {

@@ -14,7 +14,8 @@ public abstract class AbstractSphere : MonoBehaviour
 
 
     private float sphereActionTime;
-    protected void Start()
+
+    protected virtual void Start()
     {
         sphereActionTime = _currentSphereActionTime;
 

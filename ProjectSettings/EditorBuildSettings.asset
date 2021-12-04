@@ -9,23 +9,23 @@ EditorBuildSettings:
     path: Assets/Scenes/New Main menu.unity
     guid: 921c1531276091f4ab0cce270b42efe2
   - enabled: 1
-    path: Assets/Scenes/Level 1.unity
+    path: Assets/Scenes/Done/Level 1.unity
     guid: 408b3b7277c6598448eff84747f7a33b
   - enabled: 1
-    path: Assets/Scenes/Level 2.unity
+    path: Assets/Scenes/Done/Level 2.unity
     guid: d7237dab8baf98e4d9a7dd5bcd950720
   - enabled: 1
-    path: Assets/Scenes/Level 3.unity
+    path: Assets/Scenes/Done/Level 3.unity
     guid: 00f383021516d0b45b3418eb059f9545
   - enabled: 1
-    path: Assets/Scenes/Level 4.unity
+    path: Assets/Scenes/Done/Level 4.unity
     guid: f0db595e4e16b844eb5a3bb97702569e
+  - enabled: 1
+    path: Assets/Scenes/Done/Level 5.unity
+    guid: 8e4dc37f1f4e8c140a6f11c839b760df
   - enabled: 1
     path: Assets/Scenes/Oleksandr.unity
     guid: a4c5a22817ce75b4d97eba07a4aa8420
-  - enabled: 1
-    path: Assets/Scenes/Fedy 4.unity
-    guid: 8e4dc37f1f4e8c140a6f11c839b760df
   - enabled: 0
     path: Assets/Scenes/Deleted Scene/Final scene.unity
     guid: 0c1e70a1bf2488846b77fa91b8be1535
