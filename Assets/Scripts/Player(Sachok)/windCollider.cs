@@ -30,48 +30,46 @@ public class windCollider : MonoBehaviour
     //    //}
     //}
 
-    //private void OnTriggerStay2D(Collider2D collision)
-    //{
-
-    //    
-    //    
-    //        if ((transform.rotation.z > 0.15 && transform.rotation.z < 0.85) || (transform.rotation.z < -0.15 && transform.rotation.z > -0.85))
-    //        {
-    //            playerRigitbody.AddForce(Vector2.up * forceSvale);
-    //            //playerRigitbody.AddForce(transform.up * 1.01f);
-    //            playerRigitbody.gravityScale = gravityMultiple;
-    //        }
-    //        else
-    //        {
-    //            playerRigitbody.angularDrag = 0;
-    //            playerRigitbody.drag = 0.05f;
-    //            playerRigitbody.gravityScale = 1f;
-    //        }
-    //    
-
-    //}
-
-    //private void OnTriggerExit2D(Collider2D collision)
-    //{
-    //    if (collision.gameObject.tag == "WindArea")
-    //    {
-    //        playerRigitbody.angularDrag = 0;
-    //        playerRigitbody.drag = 0.05f;
-    //        playerRigitbody.gravityScale = 1f;
-    //    }
-    //}
-
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("WindArea"))
+        if (collision.gameObject.tag == "WindArea")
         {
-            playerRigitbody.AddForce(Vector2.up * forceSvale * koefAngle);
+            if ((transform.rotation.z > 0.15 && transform.rotation.z < 0.85) || (transform.rotation.z < -0.15 && transform.rotation.z > -0.85))
+            {
+                playerRigitbody.AddForce(Vector2.up * forceSvale);
+                //playerRigitbody.AddForce(transform.up * 1.01f);
+                playerRigitbody.gravityScale = gravityMultiple;
+            }
+            else
+            {
+                playerRigitbody.angularDrag = 0;
+                playerRigitbody.drag = 0.05f;
+                playerRigitbody.gravityScale = 1f;
+            }
         }
     }
-    private void Update()
+
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        koefAngle= Mathf.Abs(Mathf.DeltaAngle(transform.rotation.z, 90));
+        if (collision.gameObject.tag == "WindArea")
+        {
+            playerRigitbody.angularDrag = 0;
+            playerRigitbody.drag = 0.05f;
+            playerRigitbody.gravityScale = 1f;
+        }
     }
+
+    //private void OnTriggerStay2D(Collider2D collision)
+    //{
+    //    if (collision.gameObject.CompareTag("WindArea"))
+    //    {
+    //        playerRigitbody.AddForce(Vector2.up * forceSvale * koefAngle);
+    //    }
+    //}
+    //private void Update()
+    //{
+    //    koefAngle= Mathf.Abs(Mathf.DeltaAngle(transform.rotation.z, 0));
+    //}
 
 
     //void Update()
