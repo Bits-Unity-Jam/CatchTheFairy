@@ -8,7 +8,12 @@ public class JumpUpBall : AbstractSphere
     //public override float sphereActionTime { get ; set ; }
     [SerializeField] private float _boostJumpForce;
 
-    
+    protected override void Start()
+    {
+        base.Start();
+        StartCoroutine(Existence());
+    }
+
 
     public override void AffectOnPlayer()
     {
@@ -18,5 +23,11 @@ public class JumpUpBall : AbstractSphere
     public override void EndAffectOnPlayer()
     {
         _onCollisionPlat._forceUP = _onCollisionPlat._defaultForceUP;
+    }
+
+    IEnumerator Existence()
+    {
+        yield return new WaitForSeconds(SpawnerBall._timeToSpawn);
+        Destroy(gameObject);
     }
 }
