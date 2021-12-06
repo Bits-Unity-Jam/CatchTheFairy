@@ -207,6 +207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BLUR
       objectReference: {fileID: 0}
+    - target: {fileID: 6268940634307240405, guid: dee48c6ae9024e34b8176e59586b0333, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6268940634307240426, guid: dee48c6ae9024e34b8176e59586b0333, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
