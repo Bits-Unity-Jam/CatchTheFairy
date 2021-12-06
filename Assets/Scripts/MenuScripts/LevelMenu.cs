@@ -45,8 +45,6 @@ public class LevelMenu : MonoBehaviour
 
     public void LoadTo(int level)
     {
-
-        Time.timeScale = 1f;
         SceneManager.LoadScene(level);
     }
 

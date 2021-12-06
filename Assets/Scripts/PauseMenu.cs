@@ -6,9 +6,14 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
-    [SerializeField] private GameObject pauseMenuUI;
+    //[SerializeField] private GameObject pauseMenuUI;
 
-    // Update is called once per frame
+    private LevelController _levelController;
+
+    void Start()
+    {
+        _levelController = LevelController.instance;
+    }
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -24,37 +29,44 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    public void GamePause()
-    {
-        Pause();
-    }
-    private void Start()
-    {
-        pauseMenuUI.SetActive(false);
-    }
+    //public void GamePause()
+    //{
+    //    Pause();
+    //}
+    //private void Start()
+    //{
+    //    pauseMenuUI.SetActive(false);
+    //}
     public void Resume()
     {
-        pauseMenuUI.SetActive(false);
-        Time.timeScale = 1f;
+        //pauseMenuUI.SetActive(false);
+        //Time.timeScale = 1f;
+        SceneManager.UnloadSceneAsync(7);
         GameIsPaused = false;
     }
 
-    void Pause()
+    public void Pause()
     {
-        pauseMenuUI.SetActive(true);
-        Time.timeScale = 0f;
+        //pauseMenuUI.SetActive(true);
+        //Time.timeScale = 0f;
+        SceneManager.LoadSceneAsync(7, LoadSceneMode.Additive);
         GameIsPaused = true;
     }
-
-    public void LoadMenu()
+    public void ReStart()
     {
-        SceneManager.LoadScene("New Main menu");
-        Time.timeScale = 1f;
+        _levelController.RestartLevel();
     }
 
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
+    //public void LoadMenu()
+    //{
+    //    SceneManager.LoadScene("New Main menu");
+    //    Time.timeScale = 1f;
+    //}
+
+    //public void QuitGame()
+    //{
+    //    Application.Quit();
+    //}
+    
 
 }

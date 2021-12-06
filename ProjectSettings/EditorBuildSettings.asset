@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Level 6.unity
     guid: a4c5a22817ce75b4d97eba07a4aa8420
+  - enabled: 1
+    path: Assets/Scenes/PauseMenu.unity
+    guid: a7fefd676cc54cc428e6e940a0d4e8c0
   - enabled: 0
     path: Assets/Scenes/Deleted Scene/Final scene.unity
     guid: 0c1e70a1bf2488846b77fa91b8be1535
