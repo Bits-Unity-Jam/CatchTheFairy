@@ -13114,6 +13114,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7238173893553786210, guid: 8e8c401bc51e94040ae3e95958ddb326, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7238173893553786214, guid: 8e8c401bc51e94040ae3e95958ddb326, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -13200,7 +13204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7238173893915530112, guid: 8e8c401bc51e94040ae3e95958ddb326, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8951287304114243251, guid: 8e8c401bc51e94040ae3e95958ddb326, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
