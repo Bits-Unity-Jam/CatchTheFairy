@@ -20784,10 +20784,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5353891178813945240, guid: 8e8c401bc51e94040ae3e95958ddb326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1993674459}
+    - target: {fileID: 5353891178813945240, guid: 8e8c401bc51e94040ae3e95958ddb326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: ContinueMove
+      objectReference: {fileID: 0}
     - target: {fileID: 7238173893553786209, guid: 8e8c401bc51e94040ae3e95958ddb326, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1266557066}
+    - target: {fileID: 7238173893553786209, guid: 8e8c401bc51e94040ae3e95958ddb326, type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7238173893553786210, guid: 8e8c401bc51e94040ae3e95958ddb326, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -20879,6 +20891,18 @@ PrefabInstance:
     - target: {fileID: 7238173893915530112, guid: 8e8c401bc51e94040ae3e95958ddb326, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8951287305417432906, guid: 8e8c401bc51e94040ae3e95958ddb326, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8951287305682152929, guid: 8e8c401bc51e94040ae3e95958ddb326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1993674459}
+    - target: {fileID: 8951287305682152929, guid: 8e8c401bc51e94040ae3e95958ddb326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: StopMove
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e8c401bc51e94040ae3e95958ddb326, type: 3}
@@ -29803,8 +29827,8 @@ Camera:
   m_GameObject: {fileID: 1266557062}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -45255,7 +45279,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1910170844
 Transform:
   m_ObjectHideFlags: 0
@@ -47718,6 +47742,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1993674459 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5732846738903479305, guid: cb2589346499b8a4697d39a88e4114f6, type: 3}
+  m_PrefabInstance: {fileID: 1515035827}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a8e4f42c312f884e9f0096d5a8adf34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1994427781
 GameObject:
   m_ObjectHideFlags: 0

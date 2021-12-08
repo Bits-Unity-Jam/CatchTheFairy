@@ -52,6 +52,9 @@ public class LevelMenu : MonoBehaviour
     {
         level2B.interactable = false;
         level3B.interactable = false;
+        level4B.interactable = false;
+        level5B.interactable = false;
+        level6B.interactable = false;
         PlayerPrefs.DeleteAll();
     }
 

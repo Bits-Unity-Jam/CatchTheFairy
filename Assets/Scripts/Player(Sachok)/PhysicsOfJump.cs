@@ -36,6 +36,8 @@ public class PhysicsOfJump : MonoBehaviour
             //_rb.velocity = new Vector2(_tr.position.x - transform.position.x, _tr.position.x - transform.position.y) * _forceUP;
         }
     }
+
+    
     
 
 }

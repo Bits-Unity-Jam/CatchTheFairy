@@ -14,6 +14,10 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer _spriteRend;
     public static PlayerController _playerInstance { get; private set; }
 
+
+    private Vector2 _velocity;
+    private bool _stopMove;
+
     private void Awake()
     {
         _playerInstance = this;
@@ -41,8 +45,25 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         _rotation = new Vector3(0, 0, Input.GetAxis("Horizontal") * -_rotationSpeed);
-        transform.Rotate(_rotation);
+        if (!_stopMove)
+        {
+            transform.Rotate(_rotation);
+        }
+        
     }
-    
+
+    public void StopMove()
+    {
+        _stopMove = true;
+        _velocity = _rb.velocity;
+        _rb.bodyType = RigidbodyType2D.Static;
+    }
+    public void ContinueMove()
+    {
+        _stopMove = false;
+        _rb.bodyType = RigidbodyType2D.Dynamic;
+         _rb.velocity = _velocity ;
+    }
+
 }
 
