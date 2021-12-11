@@ -12,10 +12,10 @@ public class OptionMenu : MonoBehaviour
         audioMixer.SetFloat("volume", Mathf.Log10(volume) * 20);
     }
 
-    public void SetHards(int qualityHards)
-    {
-        //Дописати зміну складності
-    }
+    //public void SetHards(int qualityHards)
+    //{
+    //    //Дописати зміну складності
+    //}
 
     public void Sound()
     {
