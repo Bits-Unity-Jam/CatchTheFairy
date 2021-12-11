@@ -5,7 +5,7 @@ using UnityEngine;
 public class PhysicsOfJump : MonoBehaviour
 {
     [SerializeField]private Rigidbody2D _rb;
-    [HideInInspector] public float _forceUP;
+    [HideInInspector]public float _forceUP;
     public float _defaultForceUP { get; private set; } = 7;
     [SerializeField] private Transform _tr;
     private PlayerController _plContr;
@@ -36,9 +36,5 @@ public class PhysicsOfJump : MonoBehaviour
             //_rb.velocity = new Vector2(_tr.position.x - transform.position.x, _tr.position.x - transform.position.y) * _forceUP;
         }
     }
-
-    
-    
-
 }
 
