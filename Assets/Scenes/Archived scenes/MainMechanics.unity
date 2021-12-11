@@ -130,25 +130,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2840190937785808976, guid: 377ac4a41da786942b47ca5f00793682, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8192258064112735816, guid: 377ac4a41da786942b47ca5f00793682, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.51
-      objectReference: {fileID: 0}
-    - target: {fileID: 8192258064112735823, guid: 377ac4a41da786942b47ca5f00793682, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.255
-      objectReference: {fileID: 0}
-    - target: {fileID: 8192258065137842320, guid: 377ac4a41da786942b47ca5f00793682, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8192258065137842322, guid: 377ac4a41da786942b47ca5f00793682, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8192258065137842322, guid: 377ac4a41da786942b47ca5f00793682, type: 3}
       propertyPath: m_LocalPosition.x
@@ -194,30 +178,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sachok main 1 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8192258065863303006, guid: 377ac4a41da786942b47ca5f00793682, type: 3}
-      propertyPath: m_Size.x
-      value: 0.1201511
-      objectReference: {fileID: 0}
-    - target: {fileID: 8192258065863303006, guid: 377ac4a41da786942b47ca5f00793682, type: 3}
-      propertyPath: m_Size.y
-      value: 4.372769
-      objectReference: {fileID: 0}
-    - target: {fileID: 8192258065863303006, guid: 377ac4a41da786942b47ca5f00793682, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.15850827
-      objectReference: {fileID: 0}
-    - target: {fileID: 8192258065863303006, guid: 377ac4a41da786942b47ca5f00793682, type: 3}
-      propertyPath: m_Offset.y
-      value: 1.248435
-      objectReference: {fileID: 0}
-    - target: {fileID: 8779022020184986465, guid: 377ac4a41da786942b47ca5f00793682, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2840190937785808976, guid: 377ac4a41da786942b47ca5f00793682, type: 3}
-    - {fileID: 8192258065137842320, guid: 377ac4a41da786942b47ca5f00793682, type: 3}
-    - {fileID: 8779022020184986465, guid: 377ac4a41da786942b47ca5f00793682, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 377ac4a41da786942b47ca5f00793682, type: 3}
 --- !u!1 &97244726
 GameObject:
@@ -702,52 +663,8 @@ Transform:
   - {fileID: 570036626}
   - {fileID: 97244727}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &846963785 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8192258065719332363, guid: 377ac4a41da786942b47ca5f00793682, type: 3}
-  m_PrefabInstance: {fileID: 5814893}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &846963790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 846963785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 721260b6261d7784588de53dfe6b7a4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnPlatformCollision:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 975558993}
-        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1499572677}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &894392138
 GameObject:
   m_ObjectHideFlags: 0
@@ -857,11 +774,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!198 &975558993 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 7753762470941012225, guid: 377ac4a41da786942b47ca5f00793682, type: 3}
-  m_PrefabInstance: {fileID: 5814893}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1332703888
 GameObject:
   m_ObjectHideFlags: 0
@@ -961,42 +873,6 @@ MonoBehaviour:
   _target: {fileID: 0}
   smoothSpeed: 1
   _offset: {x: 0, y: 0, z: -4.5}
---- !u!1 &1499572675 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8192258065137842327, guid: 377ac4a41da786942b47ca5f00793682, type: 3}
-  m_PrefabInstance: {fileID: 5814893}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &1499572677 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 7753762471137821047, guid: 377ac4a41da786942b47ca5f00793682, type: 3}
-  m_PrefabInstance: {fileID: 5814893}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1499572681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1499572675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 503cf35e06aeaef41b61979c1caf3ee5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1499572682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1499572675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 415b4afd11dcd6440a2dc8f8b652bdb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _rotationSpeed: 5
-  _jumpForce: 7
 --- !u!1 &1616877666
 GameObject:
   m_ObjectHideFlags: 0
