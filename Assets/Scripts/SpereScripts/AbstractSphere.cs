@@ -22,7 +22,8 @@ public abstract class AbstractSphere : MonoBehaviour
         _audSphere = GetComponent<AudioSource>();
         _particalSphere = GetComponentInChildren<ParticleSystem>();
 
-        _particSysPlayer = PlayerController._playerInstance._PlayerConPartical;
+        //_particSysPlayer = Sachock.Instance;//ן³חהוצü
+
         _onCollisionPlat = PhysicsOfJump.instanceOnColl;
     }
     protected void OnCollisionEnter2D(Collision2D collision)

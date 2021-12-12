@@ -10,7 +10,7 @@ public class Nextlevel : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             LevelController.instance.isEndGame();
-            FaityCounter.RestartCounter();
+            FairyCounter.RestartCounter();
         }
     }
 }

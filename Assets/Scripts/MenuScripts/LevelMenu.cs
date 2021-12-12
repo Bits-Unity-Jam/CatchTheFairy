@@ -15,7 +15,6 @@ public class LevelMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
 
         levelComplete = PlayerPrefs.GetInt("LevelComplete");
         level2B.interactable = false;
