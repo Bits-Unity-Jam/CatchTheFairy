@@ -1130,10 +1130,10 @@ RectTransform:
   m_Father: {fileID: 7238173893553786214}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 480, y: 0}
-  m_SizeDelta: {x: 959.99, y: 1080}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -490.27618, y: 0}
+  m_SizeDelta: {x: 1435.4377, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8951287304263387672
 CanvasRenderer:
@@ -1190,9 +1190,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 5732846738903479305, guid: cb2589346499b8a4697d39a88e4114f6, type: 3}
           m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-          m_MethodName: OnTurnRightButtonDown
+          m_MethodName: OnBtnRightDown
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1206,9 +1206,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 5732846738903479305, guid: cb2589346499b8a4697d39a88e4114f6, type: 3}
           m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-          m_MethodName: OnButtonUp
+          m_MethodName: OnBtnUp
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2009,10 +2009,10 @@ RectTransform:
   m_Father: {fileID: 7238173893553786214}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -480, y: 0.0001564}
-  m_SizeDelta: {x: 960, y: 1080}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 490.27612, y: 0.0001564}
+  m_SizeDelta: {x: 1435.4478, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8951287305724696290
 CanvasRenderer:
@@ -2069,9 +2069,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 5732846738903479305, guid: cb2589346499b8a4697d39a88e4114f6, type: 3}
           m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-          m_MethodName: OnTurnLeftButtonDown
+          m_MethodName: OnBtnLeftDown
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2085,9 +2085,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 5732846738903479305, guid: cb2589346499b8a4697d39a88e4114f6, type: 3}
           m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
-          m_MethodName: OnButtonUp
+          m_MethodName: OnBtnUp
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
