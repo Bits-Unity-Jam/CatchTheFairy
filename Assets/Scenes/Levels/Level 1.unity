@@ -31954,6 +31954,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 932726201}
     m_Modifications:
+    - target: {fileID: 1638281068, guid: db178afdd7498814ab4beaf21ab9dc5a, type: 3}
+      propertyPath: _flySpots.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1638281068, guid: db178afdd7498814ab4beaf21ab9dc5a, type: 3}
+      propertyPath: _flySpots.Array.data[0]
+      value: 
+      objectReference: {fileID: 450646277}
+    - target: {fileID: 1638281068, guid: db178afdd7498814ab4beaf21ab9dc5a, type: 3}
+      propertyPath: _flySpots.Array.data[1]
+      value: 
+      objectReference: {fileID: 1302421986}
+    - target: {fileID: 1638281068, guid: db178afdd7498814ab4beaf21ab9dc5a, type: 3}
+      propertyPath: _flySpots.Array.data[2]
+      value: 
+      objectReference: {fileID: 2131898613}
     - target: {fileID: 2617265569516517179, guid: db178afdd7498814ab4beaf21ab9dc5a, type: 3}
       propertyPath: moveSpots.Array.data[0]
       value: 
@@ -57847,6 +57863,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 932726201}
     m_Modifications:
+    - target: {fileID: 1638281068, guid: db178afdd7498814ab4beaf21ab9dc5a, type: 3}
+      propertyPath: _flySpots.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1638281068, guid: db178afdd7498814ab4beaf21ab9dc5a, type: 3}
+      propertyPath: _flySpots.Array.data[0]
+      value: 
+      objectReference: {fileID: 1094218968}
+    - target: {fileID: 1638281068, guid: db178afdd7498814ab4beaf21ab9dc5a, type: 3}
+      propertyPath: _flySpots.Array.data[1]
+      value: 
+      objectReference: {fileID: 1875824323}
+    - target: {fileID: 1638281068, guid: db178afdd7498814ab4beaf21ab9dc5a, type: 3}
+      propertyPath: _flySpots.Array.data[2]
+      value: 
+      objectReference: {fileID: 1106963651}
     - target: {fileID: 2617265569516517179, guid: db178afdd7498814ab4beaf21ab9dc5a, type: 3}
       propertyPath: speed
       value: 3.5
