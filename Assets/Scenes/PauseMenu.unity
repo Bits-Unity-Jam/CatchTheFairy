@@ -386,7 +386,6 @@ GameObject:
   - component: {fileID: 58448393}
   - component: {fileID: 58448392}
   - component: {fileID: 58448395}
-  - component: {fileID: 58448396}
   m_Layer: 5
   m_Name: ResumeButton
   m_TagString: Platform
@@ -459,7 +458,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 58448396}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ButtonAnimation, Assembly-CSharp
         m_MethodName: ClickButt
         m_Mode: 1
@@ -540,18 +539,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &58448396
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 58448390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bd2a9f8fccc78d4091a9588eee0bee0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &65486783
 GameObject:
   m_ObjectHideFlags: 0
