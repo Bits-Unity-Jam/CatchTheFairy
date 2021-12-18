@@ -16124,7 +16124,15 @@ PrefabInstance:
     - target: {fileID: 8951287304114243251, guid: 8e8c401bc51e94040ae3e95958ddb326, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 8951287305072606714, guid: 8e8c401bc51e94040ae3e95958ddb326, type: 3}
+      objectReference: {fileID: 1043633914}
+    - target: {fileID: 8951287304114243251, guid: 8e8c401bc51e94040ae3e95958ddb326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReStart
+      objectReference: {fileID: 0}
+    - target: {fileID: 8951287304114243251, guid: 8e8c401bc51e94040ae3e95958ddb326, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PauseMenu, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 8951287305682152929, guid: 8e8c401bc51e94040ae3e95958ddb326, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
@@ -28573,6 +28581,17 @@ Transform:
   m_Father: {fileID: 1737059279}
   m_RootOrder: 66
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1043633914 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8951287304963145612, guid: 8e8c401bc51e94040ae3e95958ddb326, type: 3}
+  m_PrefabInstance: {fileID: 611186702}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 768d6444bcff3c74089dfeef3df2a062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1048998606
 GameObject:
   m_ObjectHideFlags: 0
@@ -31955,10 +31974,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 932726201}
     m_Modifications:
     - target: {fileID: 1638281068, guid: db178afdd7498814ab4beaf21ab9dc5a, type: 3}
-      propertyPath: _flySpots.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638281068, guid: db178afdd7498814ab4beaf21ab9dc5a, type: 3}
       propertyPath: _flySpots.Array.data[0]
       value: 
       objectReference: {fileID: 450646277}
@@ -31970,18 +31985,6 @@ PrefabInstance:
       propertyPath: _flySpots.Array.data[2]
       value: 
       objectReference: {fileID: 2131898613}
-    - target: {fileID: 2617265569516517179, guid: db178afdd7498814ab4beaf21ab9dc5a, type: 3}
-      propertyPath: moveSpots.Array.data[0]
-      value: 
-      objectReference: {fileID: 1644637353}
-    - target: {fileID: 2617265569516517179, guid: db178afdd7498814ab4beaf21ab9dc5a, type: 3}
-      propertyPath: moveSpots.Array.data[1]
-      value: 
-      objectReference: {fileID: 1782638361}
-    - target: {fileID: 2617265569516517179, guid: db178afdd7498814ab4beaf21ab9dc5a, type: 3}
-      propertyPath: moveSpots.Array.data[2]
-      value: 
-      objectReference: {fileID: 1606457786}
     - target: {fileID: 2617265569516517316, guid: db178afdd7498814ab4beaf21ab9dc5a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -57875,10 +57878,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 932726201}
     m_Modifications:
     - target: {fileID: 1638281068, guid: db178afdd7498814ab4beaf21ab9dc5a, type: 3}
-      propertyPath: _flySpots.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1638281068, guid: db178afdd7498814ab4beaf21ab9dc5a, type: 3}
       propertyPath: _flySpots.Array.data[0]
       value: 
       objectReference: {fileID: 1094218968}
@@ -57890,22 +57889,6 @@ PrefabInstance:
       propertyPath: _flySpots.Array.data[2]
       value: 
       objectReference: {fileID: 1106963651}
-    - target: {fileID: 2617265569516517179, guid: db178afdd7498814ab4beaf21ab9dc5a, type: 3}
-      propertyPath: speed
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2617265569516517179, guid: db178afdd7498814ab4beaf21ab9dc5a, type: 3}
-      propertyPath: moveSpots.Array.data[0]
-      value: 
-      objectReference: {fileID: 586982180}
-    - target: {fileID: 2617265569516517179, guid: db178afdd7498814ab4beaf21ab9dc5a, type: 3}
-      propertyPath: moveSpots.Array.data[1]
-      value: 
-      objectReference: {fileID: 658997889}
-    - target: {fileID: 2617265569516517179, guid: db178afdd7498814ab4beaf21ab9dc5a, type: 3}
-      propertyPath: moveSpots.Array.data[2]
-      value: 
-      objectReference: {fileID: 1651560935}
     - target: {fileID: 2617265569516517316, guid: db178afdd7498814ab4beaf21ab9dc5a, type: 3}
       propertyPath: m_RootOrder
       value: 1

@@ -316,6 +316,7 @@ MonoBehaviour:
   _flySpots:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   _flySpeed: 3
   CatchEvent:
     m_PersistentCalls:
